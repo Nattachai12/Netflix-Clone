@@ -1,0 +1,38 @@
+.row {
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+    /* Able to scroll on x axis with scroll bar*/
+  overflow-x: scroll;
+  padding: 20px;
+}
+/* Hide the scroll bar */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  /* object-fit will keep the aspect ratio regarding of resize */
+  object-fit: contain;
+  /* use 100% width of the screen */
+  width: 100%;
+  /* max height of the pic is  100 px */
+  max-height: 60px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 100px;
+}
+
+.row__posterLarge:hover {
+  transform:  scale(1.09);
+}

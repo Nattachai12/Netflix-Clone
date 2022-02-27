@@ -1,0 +1,32 @@
+.banner {
+  color: white;
+  object-fit: contain;
+  height: 170px;
+}
+
+
+
+.banner__contents {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  padding-top: 0px;
+  height: 190px;
+}
+
+.banner__title {
+  margin-bottom: 0px;
+  font-size: 2rem;
+  font-weight: 800;
+  padding-top: 5px;
+  margin-top: 0px;
+}
+
+.banner__description {
+  width: 13rem;
+  line-height: 1.8;
+  /* padding-top: 1rem; */
+  font-size: 0.5rem;
+  max-width: 360px;
+  height: 80px;
+}
