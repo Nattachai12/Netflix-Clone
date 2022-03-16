@@ -2,12 +2,18 @@
   margin-left: 20px;
 }
 
+.row__title {
+  color: white;
+  font-size: small;
+}
+
 .row__posters {
   display: flex;
   overflow-y: hidden;
     /* Able to scroll on x axis with scroll bar*/
   overflow-x: scroll;
   padding: 20px;
+  padding-top: 0px;
 }
 /* Hide the scroll bar */
 .row__posters::-webkit-scrollbar {

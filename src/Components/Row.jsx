@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import axios from './axios';
-import './Row.css';
+import axios from './../axios';
+import './../Style/Row.css';
 
 
 const base_url = 'https://image.tmdb.org/t/p/original/';
 
 function Row({ title, fetchURL, isLargeRow }) {
+  // console.log(props);
   const [movies, setMovies] = useState([]);
   // If second argument is an empty array, meaning the useEffet func willl run run when Row is created.
   //If there is an element inside an empty array, useEffect
@@ -23,7 +24,7 @@ function Row({ title, fetchURL, isLargeRow }) {
   return (
     <div className='row'>
       {/*  title */}
-      <h2>{title}</h2>
+      <h2 className='row__title'>{title}</h2>
       <div className='row__posters'>
         {/* row_poster*/}
         {movies.map(movie => (
